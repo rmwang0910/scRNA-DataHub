@@ -34,19 +34,49 @@
 
 ## 🚀 快速开始
 
-### 安装
+### Installation
+
+#### Method 1: Using Conda (Recommended)
 
 ```bash
-# 克隆仓库
+# Clone repository
 git clone https://github.com/yourusername/scRNA-DataHub.git
 cd scRNA-DataHub
 
-# 安装依赖
-pip install -r requirements.txt
-
-# 或使用conda
+# Create isolated conda environment
 conda env create -f environment.yml
+
+# Activate environment
 conda activate scrna-datahub
+
+# Verify installation
+python src/universal_reader.py --help
+```
+
+#### Method 2: Using pip + venv
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/scRNA-DataHub.git
+cd scRNA-DataHub
+
+# Create Python virtual environment
+python -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+#### Method 3: Direct Installation (Not Recommended)
+
+```bash
+# Install without isolation (may conflict with other packages)
+pip install -r requirements.txt
 ```
 
 ### 基础使用

@@ -6,24 +6,32 @@
 
 1. **[安装指南](installation.md)** - 如何安装scRNA-DataHub
    - 系统要求
-   - 安装方式（pip/conda）
+   - 安装方式（conda/venv/pip）
+   - 环境隔离（推荐conda）
    - 依赖说明
    - 故障排除
 
-2. **[快速开始](quickstart.md)** - 5分钟快速入门
-   - 基本安装
+2. **[环境管理指南](environment_management.md)** - 虚拟环境管理（新增）
+   - 为什么需要环境隔离
+   - Conda环境详解
+   - Python venv使用
+   - 环境管理最佳实践
+   - 常见问题解决
+
+3. **[快速开始](quickstart.md)** - 5分钟快速入门
+   - 基本安装（conda环境）
    - 简单示例
    - 常用场景
 
 ### 深入使用
 
-3. **[完整使用教程](user_guide.md)** - 详细的使用说明
+4. **[完整使用教程](user_guide.md)** - 详细的使用说明
    - 命令行工具使用
    - Python API使用
    - 高级功能
    - 性能优化
 
-4. **[API参考文档](api_reference.md)** - 完整的API文档
+5. **[API参考文档](api_reference.md)** - 完整的API文档
    - 类和方法说明
    - 参数详解
    - 返回值说明
@@ -31,24 +39,24 @@
 
 ### 数据相关
 
-5. **[数据格式详解](data_formats.md)** - 所有支持的数据格式
+6. **[数据格式详解](data_formats.md)** - 所有支持的数据格式
    - 格式说明
    - 读取方式
    - 多样本合并
    - 批次校正
 
-6. **[测试数据获取指南](test_data_guide.md)** - 如何获取测试数据
+7. **[测试数据获取指南](test_data_guide.md)** - 如何获取测试数据
    - Scanpy内置数据
    - 创建测试数据
    - 公开数据下载
 
-7. **[测试数据来源汇总](test_data_sources.md)** - 所有格式的数据来源
+8. **[测试数据来源汇总](test_data_sources.md)** - 所有格式的数据来源
    - 完整路径列表
    - 获取方式总结
 
 ### 帮助和支持
 
-8. **[常见问题](faq.md)** - 常见问题解答
+9. **[常见问题](faq.md)** - 常见问题解答
    - 安装问题
    - 使用问题
    - 格式问题
@@ -83,11 +91,13 @@
 | 文档 | 页数 | 难度 | 推荐阅读顺序 |
 |------|------|------|-------------|
 | installation.md | 2 | ⭐ | 1 |
-| quickstart.md | 2 | ⭐ | 2 |
-| user_guide.md | 20 | ⭐⭐ | 3 |
-| api_reference.md | 10 | ⭐⭐⭐ | 4 |
-| data_formats.md | 50 | ⭐⭐⭐ | 5 |
+| environment_management.md | 5 | ⭐ | 2 |
+| quickstart.md | 2 | ⭐ | 3 |
+| user_guide.md | 20 | ⭐⭐ | 4 |
+| api_reference.md | 10 | ⭐⭐⭐ | 5 |
+| data_formats.md | 50 | ⭐⭐⭐ | 6 |
 | test_data_guide.md | 15 | ⭐⭐ | - |
+| test_data_sources.md | 10 | ⭐ | - |
 | faq.md | 5 | ⭐ | - |
 
 ---

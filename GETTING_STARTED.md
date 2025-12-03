@@ -8,20 +8,46 @@
 
 ## 第1步：安装（1分钟）
 
+### 方式A：使用Conda（推荐）⭐
+
 ```bash
 # 进入项目目录
 cd /Users/warm/华大智造/TCGA/gdc/scRNA-DataHub
 
-# 安装依赖
-pip install -r requirements.txt
-```
+# 创建独立的conda环境
+conda env create -f environment.yml
 
-**验证安装：**
-```bash
+# 激活环境
+conda activate scrna-datahub
+
+# 验证安装
 python src/universal_reader.py --help
 ```
 
+### 方式B：使用Python venv
+
+```bash
+# 进入项目目录
+cd /Users/warm/华大智造/TCGA/gdc/scRNA-DataHub
+
+# 创建虚拟环境
+python -m venv venv
+
+# 激活环境
+source venv/bin/activate  # Linux/macOS
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 验证安装
+python src/universal_reader.py --help
+```
+
+**验证成功标志：**
+
 如果看到帮助信息，说明安装成功！✅
+
+**重要提示：** 推荐使用conda环境，可以完全隔离依赖，避免与其他项目冲突。
 
 ---
 
