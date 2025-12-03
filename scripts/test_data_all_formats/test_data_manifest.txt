@@ -1,0 +1,18 @@
+# Scanpy现有数据
+10x_mtx_v3=/Users/warm/华大智造/TCGA/gdc/scanpy/tests/_data/10x_data/3.0.0/filtered_feature_bc_matrix/
+10x_mtx_v2=/Users/warm/华大智造/TCGA/gdc/scanpy/tests/_data/10x_data/1.2.0/filtered_gene_bc_matrices/hg19_chr21/
+10x_h5_v3=/Users/warm/华大智造/TCGA/gdc/scanpy/tests/_data/10x_data/3.0.0/filtered_feature_bc_matrix.h5
+h5ad=/Users/warm/华大智造/TCGA/gdc/scanpy/src/scanpy/datasets/10x_pbmc68k_reduced.h5ad
+txt=/Users/warm/华大智造/TCGA/gdc/scanpy/src/scanpy/datasets/krumsiek11.txt
+zarr=/Users/warm/华大智造/TCGA/gdc/scanpy/tests/_data/10x-10k-subset.zarr/
+
+csv=test_data_all_formats/test_expression.csv
+csv_gz=test_data_all_formats/test_expression.csv.gz
+tsv=test_data_all_formats/test_expression.tsv
+tsv_gz=test_data_all_formats/test_expression.tsv.gz
+excel=test_data_all_formats/test_expression.xlsx
+mtx=test_data_all_formats/test_matrix.mtx
+mtx_gz=test_data_all_formats/test_matrix.mtx.gz
+hdf5=test_data_all_formats/test_data.hdf5
+umi_tools=test_data_all_formats/umi_tools_counts.tsv.gz
+custom_10x_mtx=test_data_all_formats/custom_10x_mtx
