@@ -171,12 +171,6 @@ See [目录结构说明.md](目录结构说明.md) for detailed structure.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please check [CONTRIBUTING.md](CONTRIBUTING.md).
-
----
-
 ## 📜 License
 
 MIT License - see [LICENSE](LICENSE) file.
@@ -197,7 +191,7 @@ Thanks to the following projects:
 ## 📮 Contact
 
 - GitHub Issues: [Submit issues](https://github.com/yourusername/scRNA-DataHub/issues)
-- Email: your.email@example.com
+- Email: rmwang0910@gmail.com
 
 ---
 

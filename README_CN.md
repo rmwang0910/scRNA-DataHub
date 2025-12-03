@@ -171,12 +171,6 @@ scRNA-DataHub/
 
 ---
 
-## 🤝 贡献
-
-欢迎贡献！请查看 [CONTRIBUTING.md](CONTRIBUTING.md)。
-
----
-
 ## 📜 开源协议
 
 MIT 协议 - 查看 [LICENSE](LICENSE) 文件。
@@ -197,7 +191,7 @@ MIT 协议 - 查看 [LICENSE](LICENSE) 文件。
 ## 📮 联系方式
 
 - GitHub Issues: [提交问题](https://github.com/yourusername/scRNA-DataHub/issues)
-- Email: your.email@example.com
+- Email: rmwang0910@gmail.com
 
 ---
 
