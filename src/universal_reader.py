@@ -824,7 +824,43 @@ class UniversalScRNAReader:
             if self.verbose and len(cleaned_uns) != len(adata.uns):
                 print(f"  - 清理了uns中的非字符串键")
         
-        adata.write_h5ad(output_path, compression=compression)
+        # 处理 anndata 0.11+ 的 nullable strings 兼容性问题
+        # 方法1：启用 nullable strings 写入（推荐）
+        original_setting = None
+        try:
+            # 尝试获取并设置 allow_write_nullable_strings
+            if hasattr(ad.settings, 'allow_write_nullable_strings'):
+                original_setting = ad.settings.allow_write_nullable_strings
+                ad.settings.allow_write_nullable_strings = True
+                if self.verbose:
+                    print("  - 启用 nullable strings 写入（anndata 0.11+）")
+        except Exception:
+            pass
+        
+        # 方法2：转换字符串列为普通字符串（备用方案）
+        try:
+            # 转换 obs 中的字符串列
+            for col in adata.obs.columns:
+                if hasattr(adata.obs[col], 'dtype'):
+                    dtype_str = str(adata.obs[col].dtype)
+                    if 'string' in dtype_str.lower() or 'String' in dtype_str:
+                        adata.obs[col] = adata.obs[col].astype(str)
+            
+            # 转换 var 中的字符串列
+            for col in adata.var.columns:
+                if hasattr(adata.var[col], 'dtype'):
+                    dtype_str = str(adata.var[col].dtype)
+                    if 'string' in dtype_str.lower() or 'String' in dtype_str:
+                        adata.var[col] = adata.var[col].astype(str)
+        except Exception:
+            pass
+        
+        try:
+            adata.write_h5ad(output_path, compression=compression)
+        finally:
+            # 恢复原始设置
+            if original_setting is not None and hasattr(ad.settings, 'allow_write_nullable_strings'):
+                ad.settings.allow_write_nullable_strings = original_setting
         
         # 检查文件大小
         file_size = os.path.getsize(output_path)
