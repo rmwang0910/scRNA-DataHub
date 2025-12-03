@@ -28,10 +28,11 @@
 | **10X Genomics** | MTX v2/v3, H5 v2/v3 | 4 | ✅ 完全支持 |
 | **标准格式** | H5AD, Loom, Zarr | 3 | ✅ 完全支持 |
 | **文本格式** | CSV, TSV, TXT, Excel | 6 | ✅ 完全支持 |
-| **其他格式** | MTX单文件, UMI-tools, 自定义10X | 3 | ✅ 完全支持 |
-| **MGI DNBelab** | dnbc4tools 输出（10X兼容） | 1 | ✅ 完全支持 |
+| **其他格式** | MTX单文件, UMI-tools, 自定义10X MTX | 3 | ✅ 完全支持 |
+| **特殊变体** | DNB C4（属于自定义10X MTX类别） | - | ✅ 自动识别 |
 
-> **测试覆盖**: 17/17 全部通过 ✅
+> **测试覆盖**: 17/17 全部通过 ✅  
+> **注**: DNB C4 格式属于"自定义10X MTX"类别，工具会自动检测并处理
 
 详细说明请查看 [docs/data_formats.md](docs/data_formats.md)
 
