@@ -31,7 +31,7 @@
 | **通用** | CSV/TSV/TXT/Excel | ✅ 完全支持 |
 | **云存储** | Zarr | ✅ 完全支持 |
 | **GEO数据库** | SOFT.GZ | ✅ 完全支持 |
-| **其他** | MTX/HDF5/UMI-tools | ✅ 完全支持 |
+| **其他** | MTX/UMI-tools | ✅ 完全支持 |
 
 ## 🚀 快速开始
 

@@ -27,7 +27,6 @@
 | **文本格式** | CSV/TSV/TXT | 通用 | ✅ |
 | **Excel** | XLSX/XLS | 手动整理 | ✅ |
 | **稀疏矩阵** | MTX | Matrix Market | ✅ |
-| **HDF5** | H5/HDF5 | 通用 | ✅ |
 | **GEO** | SOFT.GZ | NCBI GEO | ✅ |
 | **UMI-tools** | TSV.GZ | UMI-tools | ✅ |
 | **DNB C4** | MTX (10X兼容) | dnbc4tools | ✅ |

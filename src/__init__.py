@@ -2,7 +2,7 @@
 scRNA-DataHub - Universal Single-Cell RNA-seq Data Reader and Converter
 """
 
-__version__ = '1.0.0'
+__version__ = '1.0.6'
 __author__ = 'Wang Ruiming'
 __email__ = 'your.email@example.com'
 
